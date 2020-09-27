@@ -46,6 +46,9 @@ public class EstacionServicio {
 				case 3:
 				costoTotal = litros * 48;
 				break;
+				case 4:
+				costoTotal = litros * 48;
+				break;
 			}
 
 			System.out.println("Ingrese Estaci�n de Servicio: ");
