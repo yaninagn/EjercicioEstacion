@@ -44,7 +44,7 @@ public class EstacionServicio {
 				break;
 
 				case 3:
-				costoTotal = litros * 48;
+				costoTotal = litros * 190;
 				break;
 			}
 
