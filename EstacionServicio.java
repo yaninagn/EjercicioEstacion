@@ -6,8 +6,8 @@ public class EstacionServicio {
 
 	public static void main(String[] args) {
 
-		String []tipoNafta = {"Nafta Súper", "Nafta Gasoil", "Nafta Premiun"};
-		String []tipoEst = {"Estación A", "Estación B", "Estación C"};
+		String []tipoNafta = {"Nafta Sï¿½per", "Nafta Gasoil", "Nafta Premiun"};
+		String []tipoEst = {"Estaciï¿½n A", "Estaciï¿½n B", "Estaciï¿½n C"};
 		
 		
 		float[][] matriz = new float[3][3];
@@ -27,7 +27,7 @@ public class EstacionServicio {
 
 		while (litros != 0) {
 			System.out.println("Ingrese tipo de nafta: ");
-			System.out.println("0) Nafta Súper");
+			System.out.println("0) Nafta Sï¿½per");
 			System.out.println("1) Nafta Gasoil");
 			System.out.println("2) Nafta Premium");
 			int nafta = scan.nextInt();
@@ -42,12 +42,16 @@ public class EstacionServicio {
 			case 2:
 				costoTotal = litros * 40;
 				break;
+
+				case 3:
+				costoTotal = litros * 48;
+				break;
 			}
 
-			System.out.println("Ingrese Estación de Servicio: ");
-			System.out.println("0) Estación A");
-			System.out.println("1) Estación B");
-			System.out.println("2) Estación C");
+			System.out.println("Ingrese Estaciï¿½n de Servicio: ");
+			System.out.println("0) Estaciï¿½n A");
+			System.out.println("1) Estaciï¿½n B");
+			System.out.println("2) Estaciï¿½n C");
 			int estacion = scan.nextInt();
 
 			matriz[nafta][estacion] += costoTotal;
@@ -60,7 +64,7 @@ public class EstacionServicio {
 			litros = scan.nextFloat();
 		}
 
-		System.out.println("Total Ganancias por Estación de Servicio");
+		System.out.println("Total Ganancias por Estaciï¿½n de Servicio");
 		System.out.println("========================================");
 
 		for (int i = 0; i < totalPorEstacion.length; i++) {
@@ -76,7 +80,7 @@ public class EstacionServicio {
 			System.out.println( tipoNafta[i] + ": " + totalPorTipoNafta[i]);
 
 		}
-		System.out.println("Tipo de nafta más vendido");
+		System.out.println("Tipo de nafta mï¿½s vendido");
 		System.out.println("=========================");
 		int masVendido = 0;
 		int indiceMasVendido = 0;
